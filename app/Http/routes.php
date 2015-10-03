@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::controller('/lipsum','LipsumController');
+
+Route::controller('/users','UsersController');
+
+Route::controller('/password','PasswordController');
+
+Route::controller('/','DefaultController');
