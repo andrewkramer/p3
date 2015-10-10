@@ -29,7 +29,7 @@ footer {
 }
 
 .container {
-	max-width: 992;
+	max-width: 992px;
 	padding: 0px 15px;
 	background-color: #FAFCFC;
 	border: 5px solid #000011;

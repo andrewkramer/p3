@@ -185,6 +185,6 @@
 			</div>
 		</form>
 		<h3>Background</h3>
-		<p> Wecome to the xkcd password generator! Standard passwords can be difficult to remember and are not as secure as most people think. However, passwords in the xkcd style use natural words to make it easy to remember passwords much longer than would be possible with standard passwords. The increased length allows for passwords that are significantly more secure. Furthermore, you can optionally add symbols and numbers to make the password even more secure.</p>
+		<p>Standard passwords can be difficult to remember and are not as secure as most people think. However, passwords in the xkcd style use natural words to make it easy to remember passwords much longer than would be possible with standard passwords. The increased length allows for passwords that are significantly more secure. Furthermore, you can optionally add symbols and numbers to make the password even more secure.</p>
 	</div>
 @stop
