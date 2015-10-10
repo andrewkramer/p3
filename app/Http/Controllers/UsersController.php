@@ -10,7 +10,7 @@ class UsersController extends Controller {
     * Responds to requests to GET /users
     */
     public function getIndex() {
-        return "Users Default";
+        return view('users.index');
     }
 
     /**

@@ -10,7 +10,7 @@ class PasswordController extends Controller {
     * Responds to requests to GET /password
     */
     public function getIndex() {
-        return "XKCD Default";
+        return view('password.index');
     }
 
     /**

@@ -10,7 +10,7 @@ class DefaultController extends Controller {
     * Responds to requests to GET /
     */
     public function getIndex() {
-        return "Home Page";
+        return view('default.index');
     }
 
     /**

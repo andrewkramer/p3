@@ -1,0 +1,51 @@
+/* Custom CSS to override Bootstrap's default styling */
+
+body {
+	background-color: #D1E0E0;
+	font-family: 'Alegreya', serif;
+	color: #1B0035;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Play', sans-serif;
+}
+
+
+header {
+	background-color: #000011;
+	text-align: center;
+	font-family: serif;
+	color: #FAFCFC;
+}
+
+main {
+	padding: 0px 20px;
+}
+
+footer {
+	margin-top: 15px;
+	padding: 10px;
+	text-align: center;
+}
+
+.container {
+	max-width: 992;
+	padding: 0px 15px;
+	background-color: #FAFCFC;
+	border: 5px solid #000011;
+}
+
+.nav {
+	padding: 0px 25px;
+}
+
+.password {
+	text-align: center;
+}
+.password >h2{
+	font-family: sans-serif;
+}
+
+.right {
+	float: right;
+}

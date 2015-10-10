@@ -10,7 +10,7 @@ class LipsumController extends Controller {
     * Responds to requests to GET /lipsum
     */
     public function getIndex() {
-        return "Lorum Ipsum Default";
+        return view('lipsum.index');
     }
 
     /**
