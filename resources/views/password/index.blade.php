@@ -125,7 +125,7 @@
 @stop
 
 @section('main')
-	<div class="password col-md-12">
+	<div class="genResult password col-md-12">
 		<h2><?= $password ?></h2>
 		<small>Refresh the page to generate another.</small>
 	</div>

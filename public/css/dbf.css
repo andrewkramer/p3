@@ -42,8 +42,8 @@ footer {
 .password {
 	text-align: center;
 }
-.password >h2{
-	font-family: sans-serif;
+.genResult >h2{
+	font-family: "Arial", sans-serif;
 }
 
 .right {
