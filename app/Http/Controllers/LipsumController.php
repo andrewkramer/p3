@@ -28,7 +28,33 @@ class LipsumController extends Controller {
 		
 		$length = $request->input('length');
 		
-		$lipsum = $faker->paragraph($length);
+		$lipsum = "";
+		$upper = true;
+		$sentenceBreak = mt_rand(2,25);
+		$paragraphBreak = mt_rand(20,50);
+		$lastParagraphBreak = $length - mt_rand(20,50);
+		
+		for ($i = 1; $i <= $length; $i++) {
+				$vocabulum = $faker->word();
+				if ($upper) {
+					$vocabulum = ucfirst($vocabulum);
+					$upper = false;
+				}
+				
+				$lipsum = $lipsum . $vocabulum;
+				
+				if ($i == $length || $i == $sentenceBreak) {
+					$lipsum = $lipsum . ". ";
+					$upper = true;
+					$sentenceBreak = $sentenceBreak + mt_rand(2,25);
+					if ($i >= $paragraphBreak && $i <= $lastParagraphBreak) {
+						$lipsum = $lipsum . "<br><br>";
+						$paragraphBreak = $paragraphBreak + mt_rand(20,50);
+					}
+				} else {
+					$lipsum = $lipsum . " ";
+				}
+		}
 		
         return view('lipsum.index')->with('lipsum', $lipsum);
     }
