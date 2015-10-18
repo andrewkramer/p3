@@ -15,6 +15,7 @@ class UsersController extends Controller {
 		// create Faker instance
 		$faker = Faker\Factory::create();
 		
+		// Generate user information
 		$userName = $faker->name();
 		$userStreet = $faker->streetAddress();
 		$userCity = $faker->city();
@@ -22,6 +23,7 @@ class UsersController extends Controller {
 		$userZip = $faker->postcode();
 		$userPhone = $faker->phoneNumber();
 		
+		// Send user information to View
         return view('users.index')
 			->with('userName', $userName)
 			->with('userStreet', $userStreet)
@@ -38,12 +40,16 @@ class UsersController extends Controller {
 		// create Faker instance
 		$faker = Faker\Factory::create();
 		
-		$phone = $request->input('phone');
-		$address = $request->input('address');
+		// Get user options
+		$phone = $request->input('phone');	// Should a phone number be displayed
+		$address = $request->input('address');	// Should a full or partial address be displayed
 		
+		// Generate required information
 		$userName = $faker->name();
 		$userCity = $faker->city();
 		$userState = $faker->stateAbbr();
+		
+		// Check for and generate optional information, else set deselected variables to null
 		if ($address == 1) {
 			$userStreet = $faker->streetAddress();
 			$userZip = $faker->postcode();
@@ -57,6 +63,7 @@ class UsersController extends Controller {
 			$userPhone = null;
 		}
 		
+		// Send user information to View
         return view('users.index')
 			->with('userName', $userName)
 			->with('userStreet', $userStreet)
