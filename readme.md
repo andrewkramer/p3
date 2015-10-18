@@ -1,27 +1,19 @@
-## Laravel PHP Framework
+# Project 3
+## Andrew Kramer
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+[p3.eruditus12.xyz](http://p3.eruditus12.xyz)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+This site provides users with three helpful web development tools: a Lorum Ipsum text generator, and random user generator, and an xkcd password generator. Each generator displays a random text, user, password based on default parameters when the page is first visited, but users can specify their own parameters for each generator via forms on each page.
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+The Lorum Ipsum generator lets users define how many Latin words are returned. Sentence and paragraph lengths are randomly determined. The user generator allows users to select how much information is returned per user: Full address or only City and State, and include or exclude phone number. The password generator allows users to select number of words in the password, what kind of spacing character to use between words, how many numbers and/or symbols to include, and number and/or symbol placement.
 
-## Official Documentation
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+### Demo
+[Jing Recording](http://screencast.com/t/rnQwa6OrMGq)
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+### Citations
+* Word List for password generator from [http://www-01.sil.org/linguistics/wordlists/english/](http://www-01.sil.org/linguistics/wordlists/english/)
+* Bootstrap css and javascript: [getbootstrap.com](http://getbootstrap.com/)
+* Favicon: [www.extension.harvard.edu](http://www.extension.harvard.edu/)
+* "Play" and "Alegreya" fonts from [Google Fonts](https://www.google.com/fonts)
+* HTML layout based on the basic template at [getbootstrap.com](http://getbootstrap.com/getting-started/)
